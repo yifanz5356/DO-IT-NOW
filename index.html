@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- HTML file for TO-DO List -->
+<!-- Aurthor:Yifan Zhang -->
+
+<html>
+  <head>
+    <title>TO DO</title>
+  </head>
+  <body>
+
+    <!-- css-->
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- main html -->
+    <div class="header" style="background-color:#ffcc00">
+      <h2 style="margin:5px">Keep Calm and Carry On!</h2>
+      <h5 style="margin:0px">To Do Items: 2/3</h4>
+    </div>
+
+    <ul id="List">
+      <li class="urgent" >Create Your Item</li>
+      <li class="normal checked">Example Completed Item</li>
+      <li class="chores">Example Uncompleted Item</li>
+    </ul>
+
+    <div id="add" align='center'>
+      <input type="text" id="myInput" placeholder="Enter New Item Here...">
+      <br>
+      <label> Category: </label>
+      <select>
+        <option value="urgent">Urgent</option>
+        <option value="normal">Normal</option>
+        <option value="chores">Chores</option>
+      </select>
+      <br>
+      <span class="addBtn">Add</span>
+      <span class="clrBtn">Clear</span>
+      <span class="reset">Reset Entire List</span>
+    </div>
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- my js code -->
+    <script type="text/javascript" src="src/main.js"></script>
+
+
+  </body>
+</html>
