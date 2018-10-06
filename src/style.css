@@ -1,0 +1,136 @@
+/* CSS styling for TO-DO app
+Part of code referenced from https://www.w3schools.com/howto/howto_js_todolist.asp with modifications
+CSS styling for the overall app aesthetic purpose
+inlcuding the mark buttons and color choices
+*/
+
+body {
+  margin: 0;
+  min-width: 200px;
+}
+
+.header {
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* list property */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 15px;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* check mark creation */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* delete and move up button style */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 12px 12px 12px;
+}
+
+.up {
+  position:absolute;
+  right: 30;
+  top: 0;
+  padding: 12px 12px 12px 12px;
+}
+
+.close:hover, .up:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* input section style */
+#add {
+  margin: 30px;
+  padding: 5px 5px 50px 5px;
+  background-color: #ccc;
+}
+
+/* input box */
+input {
+  margin: 0;
+  border-style:solid;
+  border-radius: 1px;
+  width: 98%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* select box */
+select {
+
+  margin: 10px;
+  text-align: center;
+  background: white right center;
+  height: 34px;
+  width: 240px;
+}
+
+/* input buttons */
+.addBtn, .clrBtn, .reset {
+  padding: 10px;
+  width: 15%;
+  background: white;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-style:solid;
+}
+
+.addBtn:hover, .clrBtn:hover, .reset:hover {
+  background-color: #bbb;
+}
+
+/* style the category */
+.urgent {
+  color: red;
+}
+
+.normal {
+  color:#ff9900;
+}
+
+.chores {
+  color:black;
+}
